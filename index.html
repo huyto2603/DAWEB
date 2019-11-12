@@ -1,9 +1,127 @@
+<!-- <%@ tag language="java" pageEncoding="UTF-8"%>
+<%@attribute name="title" required="true" %>
+<%@attribute name="content" required="true" fragment="true" %> -->
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang="en">
 
-    </head>
-    <body>
-        <h1>hello my friend</h1>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/pricing/">
+    <link rel="stylesheet" href="./style/style-template.css">
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+  
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+      </style>
+</head>
+
+<body class="bg-light">
+    <!-- <div id="container">
+        <div id="header"></div>
+        <div id="menu"></div>
+        <div id="content"></div>
+        <div id="footer"></div>
+    </div> -->
+    <!-- header of web auction page -->
+    <div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand mr-auto mr-lg-0" href="#">Offcanvas navbar</a>
+        <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Notifications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Switch account</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Settings</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown01">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      
+      <div class="nav-scroller bg-white bg-light shadow-sm">
+        <nav class="nav nav-underline">
+          <a class="nav-link active" href="#">Dashboard</a>
+          <a class="nav-link" href="#">
+            Friends
+            <span class="badge badge-pill align-text-bottom">27</span>
+          </a>
+          <a class="nav-link" href="#">Explore</a>
+          <a class="nav-link" href="#">Suggestions</a>
+          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">Link</a>
+        </nav>
+      </div>
+      </div> <!--the end of Header-->
+      
+      <!-- drop option of menu -->
+      <div>
+        <div class="dropdown mr-1">
+          <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+            Offset
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-secondary">Reference</button>
+          <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+            <span class="sr-only">Toggle Dropdown</span>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuReference">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </div>
+      </div>
+      
+      
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
 </html>
