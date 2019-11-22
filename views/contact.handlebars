@@ -1,0 +1,95 @@
+
+<link rel="stylesheet" type="text/css" href="/style/site-contact.css">
+<div id="container">
+    <div id="nav">
+      <div id="left">
+        <img src="/image/auctionHammer.png" width="100" height="70">
+      </div>
+      <div id="right">
+        <ul>
+          <li>HOME</li>
+          <li>JOBS</li>
+          <li>CONTACT</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="heading">
+      <h1>GENERAL INQUIRIES</h1>
+    </div>
+
+    <div id="content">
+      <form method="post" action="process.html" onsubmit="return validateMyForm();">
+        <div class="fg">
+          <span>NAME</span>
+          <span id="nameWarn">required</span>
+          <input type="text" name="txtName">
+        </div>
+        <div class="fg">
+          <span>EMAIL</span>
+          <span id="emailWarn">required</span>
+          <input type="text" name="txtEmail" placeholder="nndkhoa@fit.hcmus.edu.vn">
+        </div>
+        <div class="fg">
+          <span>NATURE of ENQUIRY</span>
+          <select>
+            <option value="0">general</option>
+          </select>
+        </div>
+        <div class="fg">
+          <span>MESSAGE</span>
+          <textarea rows="6"></textarea>
+        </div>
+        <div class="fg">
+          <span id="mathRad" ></span>
+          <span id="calWarn">required</span>
+          <input type="number" id="numCal">
+        </div>
+        <div class="fg">
+          <button type="submit">SUBMIT</button>
+          <button type="reset">RESET</button>
+          <button type="button">BUTTON</button>
+        </div>
+      </form>
+    </div>
+    <span id="myspan"> hereismytext </span>
+    <div id="footer">
+      200 online users - 24 visited users.
+    </div>
+
+  </div>
+  <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var x = Math.floor((Math.random() * 9) + 2);
+    var y = Math.floor((Math.random() * 9) + 2);
+    function randomNumber() {
+      // $("#rmathRad").val(x + ' + ' + y);
+      document.getElementById("mathRad").textContent = x + " + " + y + "?";
+    }
+    function validateMyForm() {
+      var checkName = document.getElementsByName("txtName");
+      var checkEmail = document.getElementsByName("txtEmail");
+      var checkCal = document.getElementById("numCal");
+      // su dung name neu nguoi dung ko nhap thi se~ ko cho submit
+      if (checkName[0].value == "") {
+        document.getElementById("nameWarn").textContent = "Please fill out your name";
+        return false;
+      }
+      //kiem tra email em chi~ kiem tra co' dau' @ hay ko
+      if (checkEmail[0].value.indexOf("@") == -1) {
+        document.getElementById("emailWarn").textContent = "Please fill out a valid email format";
+        return false;
+      }
+      //su dung ID
+      if (checkCal.value != (x + y)) {
+        document.getElementById("calWarn").textContent = "Please fill out a correct answer"
+        return false;
+      }
+      alert("Thank you for your information");
+      return true;
+      // return false;
+    }
+   window.onload = function(){
+     randomNumber();
+   }
+  </script>
