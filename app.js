@@ -76,12 +76,10 @@ app.get('/OPPO-Reno-10x-Zoom-Edition', function (req, res) {
 app.get('/Samsung-Galaxy-A80', function (req, res) {
     res.render('smartphone/Samsung Galaxy A80.handlebars');
 });
-<<<<<<< HEAD
-=======
+
 app.get('/Samsung-Galaxy-S10', function (req, res) {
     res.render('smartphone/Samsung Galaxy S10.handlebars');
 });
->>>>>>> 7db3ecd4cd3e8b769061b9245a075ab9a2f6f13b
 app.get('/Vivo-V17-Pro', function (req, res) {
     res.render('smartphone/Vivo V17 Pro.handlebars');
 });
