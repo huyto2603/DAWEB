@@ -76,16 +76,15 @@ app.get('/OPPO-Reno-10x-Zoom-Edition', function (req, res) {
 app.get('/Samsung-Galaxy-A80', function (req, res) {
     res.render('smartphone/Samsung Galaxy A80.handlebars');
 });
-app.get('/Samsung-Galaxy-S10+', function (req, res) {
-    res.render('smartphone/Samsung Galaxy S10+.handlebars');
-});
 app.get('/Vivo-V17-Pro', function (req, res) {
     res.render('smartphone/Vivo V17 Pro.handlebars');
 });
 app.get('/Xiaomi-Redmi-8', function (req, res) {
     res.render('smartphone/Xiaomi Redmi 8.handlebars');
 });
-
+app.get('/Samsung-Galaxy-S10', function (req, res) {
+    res.render('smartphone/Samsung Galaxy S10.handlebars');
+});
 //end of dien thoai
 app.get('/dang-nhap', function (req, res) {
     res.render('dang-nhap.handlebars');
